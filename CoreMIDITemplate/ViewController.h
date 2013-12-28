@@ -10,8 +10,11 @@
 #import <CoreMIDI/CoreMIDI.h>
 
 @interface ViewController : UIViewController {
-    MIDIClientRef client;
-    MIDIPortRef outputPort;
+    MIDIClientRef		client;
+    MIDIPortRef			outputPort;
+    MIDIPortRef			inputPort;
+    MIDIEndpointRef		virtualDestinationEndpoint;
+    MIDIEndpointRef		virtualSourceEndpoint;
 }
 
 @end
